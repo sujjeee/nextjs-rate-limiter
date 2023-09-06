@@ -7,7 +7,7 @@ export default function Home() {
   const ip = headers().get("x-forwarded-for")!;
 
   return (
-    <main className="flex flex-col items-center justify-between">
+    <main className="flex h-[80vh] flex-col items-center justify-between">
       <div className="my-10">
         <p>Your IP : {ip}</p>
       </div>

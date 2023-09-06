@@ -5,7 +5,7 @@ type IPRequestCounts = Map<string, { count: number; expirationTime: number }>;
 const ipRequestCounts: IPRequestCounts = new Map();
 
 const maxRequestsPerIP = 3;
-const expirationTimeMs = 60 * 1000;
+const expirationTimeMs = 10 * 60 * 1000; // 10 minutes in milliseconds
 
 export async function fetchDogImage(ip: string) {
     console.log('user ip', ip)
