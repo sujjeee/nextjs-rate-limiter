@@ -16,6 +16,7 @@ export default function ShowDog({ ip }: { ip: string }) {
             setImage(getData.message);
             setIsloading(false)
         } catch (error) {
+            setIsloading(false)
             if (error instanceof Error) {
                 toast.error('Too many requests. Please try later.', {
                     position: "top-right",
